@@ -2,24 +2,27 @@
 	background-image: url('image/floor.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
-	height: auto;
+	height: 1100px;
 	width: 100%;
 }
 .logo{
-	margin-top: 80px;
-	width: 200px;
-	height: 200px;
+	margin: auto;
+  display: block;
+	width: 180px;
+	height: 180px;
 }
 .title{
-	font-family: 'Pacifico', cursive;
+	font-family: 'Anton', sans-serif;
 	font-size: 76px;
-	color: #000;
+	color: #fff;
+  margin-top: 50px;
 	text-align: center;
+  line-height: 28px;
 }
 .subtitle{
-	font-family: 'Courgette', cursive;
-	font-size: 48px;
-	color: #000;
+	font-family: 'Anton', sans-serif;
+	font-size: 38px;
+	color: #fff;
 	text-align: center;
 }
 * {
@@ -165,4 +168,12 @@ fieldset {
 
 :-ms-input-placeholder {
   color: #888;
+}
+@media screen and (max-width: 700px){
+.title{
+font-size:68px;
+}
+.subtitle{
+font-size:38px;
+}
 }
