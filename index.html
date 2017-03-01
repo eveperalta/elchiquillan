@@ -3,42 +3,59 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+	<meta name="description" content="">
+	<meta name="author" content="">
 	<title>El Chiquillan</title>
-	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
 	<link href="style.css" type="text/css" rel="stylesheet"  >
-
+	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="icon" type="image/png" sizes="32x32" href="image/favicon-32x32.png">
 </head>
+
 <body>
+<div class="container-fluid">
 	<div class="row">
 		<div class="col-sm-12 col-xs-12 col-lg-12" id="background">
 			<img src="image/logo.png" alt="El Chiquillan" class="logo img-responsive"/>
-			<h1 class="title">EL CHIQUILLAN</h1>
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12">
+					<h2 class="title">EL CHIQUILLAN</h2>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12">
+						<h3 class="subtitle">PRODUCTOS DEL SUR</h3>
+				</div>
+			</div>
 			<br>
-			<h2 class="subtitle">PRODUCTOS DEL SUR</h2>
 			<div class="container">
-			<form id="contact" action="contacto.php" method="post" class="contact" onsubmit="alert('Tu mensaje ha sido enviado, te contactaremos a la brevedad')">
-				<h3 style="color: black; font-weight: bold">Contactenos</h3>
-				<h4 style="color: black; font-weight: bold">Ventas, consultas, solicitudes:</h4>
-				<fieldset>
-					<input placeholder="Nombre" type="text" tabindex="1" name="nombre" required autofocus></fieldset>
-					<fieldset>
-						<input placeholder="Su email" type="email" tabindex="2" name="email" required></fieldset>
-						<fieldset>
-							<input placeholder="Numero de Telefono (opcional)" type="tel" name="tel" tabindex="3">
-						</fieldset>
-							<textarea placeholder="Dejenos su mensaje aqui...." tabindex="5" name="mensaje" required></textarea>
-								</fieldset>
-								<fieldset>
-									<button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Enviar</button>
-								</fieldset>
-							</form>
+
+					<form action="contacto.php" method="post" class="contact" onsubmit="alert('Tu mensaje ha sido enviado, te contactaremos a la brevedad')"  id="contact">
+						<h3 style="color: black; font-weight: bold">Contactenos</h3>
+						<h4 style="color: black;">Ventas, consultas, solicitudes:</h4>
+						<div class="form-group">
+							<input type="text" name="nombre" class="form-control" id="inputName" placeholder="Nombre" required>
 						</div>
+						<div class="form-group">
+							<input type="email" name="email" class="form-control" id="inputEmail1" placeholder="Su email (requerido)" required>
+						</div>
+						<div class="form-group">
+							<input type="tel" class="form-control" name="asunto" id="inputPhone1" placeholder="Numero de teléfono (requerido)" required>
+						</div>
+						<div class="form-group">
+							<textarea type="text" name="mensaje" class="form-control" rows="3" required placeholder="Dejenos su mensaje aquí (requerido)"></textarea>
+						</div>
+						<button type="submit" id="submit"  class="btn btn-md pull-right txt-verde">ENVIAR</button>
+					</form>
+
+
+				</div>
+			</div>
 	</div>
+</div>
+			<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-
-	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-</body>
-</html>
+		</body>
+		</html>
